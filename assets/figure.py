@@ -28,7 +28,7 @@ def main():
     d.text((5, 9), "Espelho in three rules", "heading")
     f1, f2, f3 = panels(
         d, 3, area=(5.0, 14.0, 160.0, 74.0),
-        titles=["1. Tap in the background", "2. Full screen to type", "3. Stop and hand over"],
+        titles=["1. Tap in the background", "2. Typing and scrolling", "3. Stop and hand over"],
         verdicts=[True, None, False], colored=True, arrows=False, gap=10.0,
     )
 
@@ -45,7 +45,7 @@ def main():
     sx = f2.x + 5
     laptop(d, sx, sy, 36, 24)
     big = phone(d, sx + 12, sy + 1, 11, 22)
-    hand_note(d, big, (f2.x + 2, f2.y + 46), "type, scroll, drag: only after a yes, when the Mac is free", 42, bend=-0.2)
+    hand_note(d, big, (f2.x + 2, f2.y + 46), "mirroir-mcp in the background; without it, full screen after a yes", 42, bend=-0.2)
 
     # 3: a passcode screen is the person's step.
     px, py = f3.x + 15, f3.y + 5

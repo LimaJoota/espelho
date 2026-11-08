@@ -19,7 +19,8 @@ git clone https://github.com/LimaJoota/espelho
 ## What it needs
 
 - macOS with iPhone Mirroring, and an iPhone that can mirror (locked, nearby, Wi-Fi and Bluetooth on).
-- Computer-use tools that can tap in an app window in the background (`app_*`) and, for typing and scrolling, take the full screen (`computer_batch`).
+- Best: [mirroir-mcp](https://github.com/jfarcand/mirroir-mcp), which taps, types and scrolls without taking the screen.
+- Or computer-use tools that tap in an app window in the background (`app_*`) and take the full screen (`computer_batch`) to type and scroll.
 
 ## What it covers
 
@@ -31,11 +32,11 @@ git clone https://github.com/LimaJoota/espelho
 - Signed shortcuts with `shortcuts sign` for jobs the window cannot do, such as the wallpaper.
 - Hard lines: no passcodes, no privacy prompts, no taps on people in the Share sheet.
 
-## Next to other tools
+## With mirroir-mcp
 
-[mirroir-mcp](https://github.com/jfarcand/mirroir-mcp) is a server you install. It types and swipes in the background, which plain computer-use tools cannot do. If you need that, use it.
+[mirroir-mcp](https://github.com/jfarcand/mirroir-mcp) moves the phone. Espelho says where to go and where to stop. When the server is connected, the skill uses it first: `describe_screen` in place of screenshots, and typing and scrolling with the screen left to you. `references/mirroir.md` has the setup, a short permission file and which tools borrow the front for a second.
 
-Espelho installs nothing. It is a single instruction file for the tools you already have, plus the field notes: which screens fail while mirroring, how to get files over, when a signed shortcut beats tapping, and where to stop. Those notes hold whatever tool does the tapping.
+Without it, the skill falls back to plain computer-use tools. The field notes hold either way: which screens fail while mirroring, how to get files over, when a signed shortcut beats tapping, and where to stop.
 
 ## Status
 

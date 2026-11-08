@@ -1,9 +1,11 @@
 """README figure: tap in the background, take the screen only to type, scroll or drag, stop at the hard lines."""
 
+import os
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path.home() / ".claude/skills/esquadro/scripts"))
+# Needs the esquadro library: https://github.com/LimaJoota/esquadro
+sys.path.insert(0, os.environ.get("ESQUADRO_SCRIPTS", str(Path(__file__).resolve().parents[2] / "esquadro/scripts")))
 from esquadro import Drawing, hand_note, panels
 
 OUT = Path(__file__).resolve().parent

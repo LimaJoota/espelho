@@ -36,6 +36,8 @@ git clone https://github.com/LimaJoota/espelho
 
 [mirroir-mcp](https://github.com/jfarcand/mirroir-mcp) moves the phone. Espelho says where to go and where to stop. When the server is connected, the skill uses it first: `describe_screen` in place of screenshots, and typing and scrolling with the screen left to you. `references/mirroir.md` has the setup, a short permission file and which tools borrow the front for a second.
 
+mirroir-mcp is a separate project by [jfarcand](https://github.com/jfarcand), under Apache-2.0. Espelho does not include its code; it only uses the server when you have it.
+
 Without it, the skill falls back to plain computer-use tools. The field notes hold either way: which screens fail while mirroring, how to get files over, when a signed shortcut beats tapping, and where to stop.
 
 ## Status

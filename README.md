@@ -4,6 +4,8 @@ A skill for driving a real iPhone from a Mac through iPhone Mirroring, with comp
 
 *Espelho* is Portuguese for mirror.
 
+![Three rules: tap in the background, take the full screen only to type, scroll or drag, and hand passcodes, privacy prompts and the Share sheet to the person](assets/espelho.svg)
+
 > **Em português:** skill para mexer no iPhone pelo Espelhamento do iPhone no Mac. Diz o que funciona em segundo plano (toques e o menu Visualizar), o que precisa da tela inteira (digitar, rolar, arrastar), como levar arquivos pelo iCloud Drive, como usar um atalho assinado quando a janela não dá conta, e onde parar: senha, permissão de privacidade e folha de Compartilhar ficam com a pessoa.
 
 ## Install
@@ -28,6 +30,12 @@ git clone https://github.com/LimaJoota/espelho
 - Mac to iPhone files over iCloud Drive.
 - Signed shortcuts with `shortcuts sign` for jobs the window cannot do, such as the wallpaper.
 - Hard lines: no passcodes, no privacy prompts, no taps on people in the Share sheet.
+
+## Next to other tools
+
+[mirroir-mcp](https://github.com/jfarcand/mirroir-mcp) is a server you install. It types and swipes in the background, which plain computer-use tools cannot do. If you need that, use it.
+
+Espelho installs nothing. It is a single instruction file for the tools you already have, plus the field notes: which screens fail while mirroring, how to get files over, when a signed shortcut beats tapping, and where to stop. Those notes hold whatever tool does the tapping.
 
 ## Status
 

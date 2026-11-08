@@ -6,7 +6,9 @@
 
 The install and the macOS permissions are the user's decision. Ask before you install.
 
-1. Install: `npx -y mirroir-mcp install`, or `brew tap jfarcand/tap && brew install mirroir-mcp`.
+1. Install: `npm install -g mirroir-mcp`. It downloads a prebuilt binary and checks its SHA-256. Register `mirroir-mcp-native`, which sits next to the `mirroir-mcp` command, as a stdio MCP server in your client. That path needs no Node at start-up.
+   - `npx -y mirroir-mcp install` also works, but it also installs the project's own skill, which repeats this one.
+   - The Homebrew formula builds from source. It needs the full Xcode app, and Homebrew asks the user to trust the tap first.
 2. Check: `npx -y mirroir-mcp doctor`. It names what is left to fix.
 3. The user grants Screen Recording and Accessibility in System Settings. Never change these settings for the user.
 4. The server is read-only until `~/.mirroir-mcp/permissions.json` allows more. Propose a short list, and let the user approve it:

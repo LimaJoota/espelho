@@ -25,6 +25,7 @@ git clone https://github.com/LimaJoota/espelho
 ## What it covers
 
 - Setup and the "Timed Out" screen.
+- Off your screen: opens iPhone Mirroring without activating it, keeps it in another Space, and checks the front app after each batch.
 - Background mode: taps work, the View menu works, typing, scrolling and dragging do not.
 - Full-screen mode: Spotlight with `cmd+3`, typing, and new coordinates after the window moves.
 - Small screenshots, zoom on one region, batched actions.

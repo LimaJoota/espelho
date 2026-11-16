@@ -31,8 +31,10 @@ Do not propose `"allow": ["*"]`. Add the user's bank and payment apps to `blocke
 | `type_text`, `press_key` | Kept | Typing works in the background. |
 | `swipe`, `scroll_to` | Kept | Lists and the Share sheet scroll. |
 | `launch_app`, `spotlight`, `press_home`, `press_app_switcher` | Kept | Faster than tapping through the Home Screen. |
-| `drag`, `pinch`, `rotate` | Borrowed for about 1 s | Moves icons and widgets. Agree on a time first. |
-| `hold_keys`, `touch` | Taken | Avoid while the user works. |
+| `drag`, `pinch`, `rotate` | Borrowed for about 1 s | Switches to the mirror's Space. Do not use while the user works. |
+| `hold_keys`, `touch` | Taken | Do not use while the user works. |
+
+Window state matters. Hidden (Cmd+H): reads work, input is refused. Minimized: nothing works. On another Space, or covered by other windows: reads and input work.
 
 ## What it does not change
 
